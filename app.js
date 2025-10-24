@@ -7,7 +7,7 @@ import cors from "cors";
 const app = express();
 dotenv.config();
 
-const port = 3000;
+// const port = 3000;
 
 ConnectDB();
 app.use(cors());
@@ -16,4 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/products", productsRouter);
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+// app.listen(port, () => console.log(`Server running on port ${port}`));
+
+export default app;
